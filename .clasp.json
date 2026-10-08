@@ -1,9 +1,19 @@
 {
   "scriptId": "REPLACE_WITH_APPS_SCRIPT_ID",
+  "parentId": [
+    "REPLACE_WITH_PARENT_FILE_ID"
+  ],
   "rootDir": "src",
-  "scriptExtensions": [".js", ".gs"],
-  "htmlExtensions": [".html"],
-  "jsonExtensions": [".json"],
+  "scriptExtensions": [
+    ".js",
+    ".gs"
+  ],
+  "htmlExtensions": [
+    ".html"
+  ],
+  "jsonExtensions": [
+    ".json"
+  ],
   "filePushOrder": [
     "Brand.gs",
     "ShapeKit.gs",
