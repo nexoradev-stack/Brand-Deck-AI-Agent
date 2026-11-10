@@ -1,8 +1,14 @@
 # 📜 Changelog
 
-All notable changes to the 66° Deck Agent. Versions follow the project's own numbering (`V.1_xx`); each release below groups the versions of one stage.
+All notable changes to the BrandDeck AI Agent (shown in Google Slides as 66° Deck Agent). Versions follow the project's own numbering (`V.1_xx`); each release below groups the versions of one stage.
 
 ---
+
+## v1.80.2 — New name: BrandDeck AI Agent · 10 Nov 2026
+
+- 🏷️ Repository renamed to **Brand-Deck-AI-Agent**; README, architecture, changelog and banner updated
+- ✅ The full V.1_80 source package was checked file by file: identical to this repository (no code changes needed)
+- ℹ️ The add-on keeps its name in Google Slides (**66° Deck Agent**) so users see no change
 
 ## v1.80.1 — Repository docs and privacy · 10 Nov 2026
 

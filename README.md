@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="docs/assets/banner.svg" alt="66° Deck Agent — Presentation AI Agent for Google Slides" width="100%">
+<img src="docs/assets/banner.svg" alt="BrandDeck AI Agent — Presentation AI Agent for Google Slides" width="100%">
 
 <br><br>
 
-[![CI](https://github.com/nexoradev-stack/Presentation-AI-Agent/actions/workflows/ci.yml/badge.svg)](https://github.com/nexoradev-stack/Presentation-AI-Agent/actions/workflows/ci.yml)
+[![CI](https://github.com/nexoradev-stack/Brand-Deck-AI-Agent/actions/workflows/ci.yml/badge.svg)](https://github.com/nexoradev-stack/Brand-Deck-AI-Agent/actions/workflows/ci.yml)
 ![Version](https://img.shields.io/badge/version-V.1__80-0052FF?style=flat-square)
 ![Google Slides](https://img.shields.io/badge/Google_Slides-add--on-FBBC04?style=flat-square&logo=googleslides&logoColor=white)
 ![Apps Script](https://img.shields.io/badge/Apps_Script-runtime-4285F4?style=flat-square&logo=google&logoColor=white)
@@ -20,7 +20,7 @@
 
 ## ✨ What it does
 
-A **Google Slides add-on** that turns a prompt (and optional source files) into **on-brand, editable** 66degrees slides, drawn as native Slides shapes **into the presentation that is already open**.
+**BrandDeck AI Agent** (shown in Google Slides as **66° Deck Agent**) is a **Google Slides add-on** that turns a prompt (and optional source files) into **on-brand, editable** 66degrees slides, drawn as native Slides shapes **into the presentation that is already open**.
 
 | | |
 |---|---|
@@ -137,7 +137,7 @@ Type is **Plus Jakarta Sans** (with IBM Plex Mono for KPI numbers). Every box ha
 <summary><b>📂 Directory structure</b></summary>
 
 ```text
-Presentation-AI-Agent/
+Brand-Deck-AI-Agent/
 ├── .github/workflows/      # ci.yml (tests + secrets check), deploy.yml (clasp), clasp-pull.yml
 ├── assets/icons/           # 66° icon set (night blue, white, accent blue) + manifest
 ├── docs/assets/banner.svg
