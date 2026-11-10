@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Solution Deck design library (V.1_53), part 4: statements, lists, journeys and dark slides
+   BrandDeck AI Agent — Solution Deck design library (V.1_53), part 4: statements, lists, journeys and dark slides
    From the 66degrees solution decks (Managed Services 2026, MLOps, Sales agent metrics, AI-driven firms, add-on
    services, Agent lifecycle, GE enablement, AI fluency pathway, client story, services framework): a dark statement
    on the streak photo, a statement with explainers, a photo banner with steps and figures, present -> gap -> solution,

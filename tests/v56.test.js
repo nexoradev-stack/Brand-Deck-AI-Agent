@@ -124,7 +124,7 @@ const props = (sb, kv) => { const p = sb.PropertiesService.getScriptProperties()
 const CORVINA = "Create a solution deck for Corvina Rail Systems: technical tone. Condition-based maintenance for 1,200 rail switches on Google Cloud: sensor readings streamed through Pub/Sub and Dataflow into BigQuery, failure prediction with Vertex AI, the reference architecture, a primary and DR region design, security controls (IAM, VPC Service Controls, CMEK), today's manual track inspections vs predicted alerts, the deployment layers with Terraform, day-2 runbooks for known issues, support priorities, and the next step.";
 
 test("version label is V.1_56 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(5[6-9]|[6-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(5[6-9]|[6-9]\d)'/);
 });
 
 test("off the global region the add-on keeps the Gemini 2.5 models", () => {

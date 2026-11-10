@@ -1,5 +1,5 @@
 /**
- * 66° Deck Agent — Proposal Deck kit (V.1_37, batch 1)
+ * BrandDeck AI Agent — Proposal Deck kit (V.1_37, batch 1)
  *
  * A Proposal Deck is built ONLY from proposal designs:
  *  - strict proposal cover: client logo top-left (66degrees wordmark when no client is named), dotted block top-right,

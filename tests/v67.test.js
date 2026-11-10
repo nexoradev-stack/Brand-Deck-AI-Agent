@@ -32,7 +32,7 @@ const boxesOf = (o) => o.els.filter((e) => (e.t === "rect" || e.t === "roundrect
 const inkBottom = (o, B) => Math.max(...o.els.filter((e) => e.t === "text" && e.x + 3.6 >= B.x - 1 && e.x + e.w - 3.6 <= B.x + B.w + 1 && e.y + 3.6 >= B.y - 1 && e.y < B.y + B.h).map((e) => e.y + (e.vh || e.h) - 3.6));
 
 test("version label is V.1_67 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(6[7-9]|[7-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(6[7-9]|[7-9]\d)'/);
 });
 
 test("1. boxes end just under their text (Solution 15 deployment columns, 20/21 KPI tiles, General 20)", () => {

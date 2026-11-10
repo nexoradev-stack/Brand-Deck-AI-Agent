@@ -1,7 +1,7 @@
 /**
- * 66° Deck Agent — model check (V.1_56)
+ * BrandDeck AI Agent — model check (V.1_56)
  *
- * From the add-on menu: Extensions ▸ 66° Deck Agent ▸ Test AI models (testAiModels in Code.gs calls
+ * From the add-on menu: Extensions ▸ BrandDeck AI Agent ▸ Test AI models (testAiModels in Code.gs calls
  * testConfiguredModels_ below: the models the add-on is set to use, on its own region).
  * From the Apps Script editor: Run ▸ testNewModels, then open View ▸ Logs (or Executions).
  * It sends one tiny request to each new model in each region and logs whether it answered, how long it took and

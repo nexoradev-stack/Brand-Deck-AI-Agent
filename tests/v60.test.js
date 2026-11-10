@@ -48,7 +48,7 @@ const style = (e) => e.shape.text.textElements.find((t) => t.textRun && t.textRu
 const color = (R, e) => R.sb.colorHex_(style(e).foregroundColor && style(e).foregroundColor.opaqueColor);
 
 test("version label is V.1_60 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(6\d|[7-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(6\d|[7-9]\d)'/);
 });
 
 test("transparent wrappers and theme colours: slide 6 text is readable, slide 2's dark card stays dark with white text", () => {

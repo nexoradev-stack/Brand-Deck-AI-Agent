@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Proposal Deck built-in pictures (V.1_42)
+   BrandDeck AI Agent — Proposal Deck built-in pictures (V.1_42)
    The navy background with the big 66° (navy section divider) and the navy header band with the 66° watermark
    (proposal agendas), as JPEG, so they need no Drive file. Used through inlineAssetBlob_ (ProposalKit.gs).
    ========================================================================================================= */

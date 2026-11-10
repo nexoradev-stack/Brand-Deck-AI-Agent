@@ -409,17 +409,17 @@ function assertSamePresentation() {
   } else {
     ok("Generator.html completion link uses the returned presentation id/url");
   }
-  if (!/<h2>\s*66° Deck Agent\s*<\/h2>|<h1>\s*Deck Agent\s*<\/h1>/.test(html)) {
-    fail("Generator.html must use the 66° Deck Agent headline");
+  if (!/<h2>\s*BrandDeck AI Agent\s*<\/h2>|<h1>\s*BrandDeck AI Agent\s*<\/h1>/.test(html)) {
+    fail("Generator.html must use the BrandDeck AI Agent headline");
   } else {
-    ok("Generator.html uses 66° Deck Agent headline");
+    ok("Generator.html uses BrandDeck AI Agent headline");
   }
   if (/<h2>\s*66degrees AI Presentation Generator\s*<\/h2>/.test(html)) {
     fail("Generator.html must not use the obsolete generator heading");
   } else {
     ok("Generator.html does not use the obsolete generator heading");
   }
-  // V.1_41: the header shows only "Deck Agent" (no subtitle line)
+  // V.1_41: the header shows only the agent name (no subtitle line)
   if (/On-brand Google Slides in minutes/.test(html)) {
     fail("Generator.html must not show the old subtitle line");
   } else {
@@ -564,10 +564,10 @@ function assertVertexOauthOnly() {
 
   const code = read("src/Code.gs");
   const show = code.slice(code.indexOf("function showGenerator()"), code.indexOf("function showGeneratorSidebar"));
-  if (/\.setTitle\(\s*['"]66° Deck Agent['"]\s*\)/.test(show)) {
-    fail("showGenerator must not set the outer sidebar title to 66° Deck Agent");
+  if (/\.setTitle\(\s*['"]BrandDeck AI Agent['"]\s*\)/.test(show)) {
+    fail("showGenerator must not set the outer sidebar title to BrandDeck AI Agent");
   } else {
-    ok("Outer sidebar title is not configured as 66° Deck Agent");
+    ok("Outer sidebar title is not configured as BrandDeck AI Agent");
   }
   if (!/showSidebar/.test(show) || !/createHtmlOutputFromFile\('Generator'\)/.test(show)) {
     fail("showGenerator must still open the Generator sidebar");
@@ -575,10 +575,10 @@ function assertVertexOauthOnly() {
     ok("showGenerator still opens the Generator sidebar");
   }
   const html = read("src/Generator.html");
-  if (!/<h2>\s*66° Deck Agent\s*<\/h2>|<h1>\s*Deck Agent\s*<\/h1>/.test(html)) {
-    fail("Inner Generator heading 66° Deck Agent must remain");
+  if (!/<h2>\s*BrandDeck AI Agent\s*<\/h2>|<h1>\s*BrandDeck AI Agent\s*<\/h1>/.test(html)) {
+    fail("Inner Generator heading BrandDeck AI Agent must remain");
   } else {
-    ok("Inner Generator heading 66° Deck Agent is retained");
+    ok("Inner Generator heading BrandDeck AI Agent is retained");
   }
 }
 
@@ -609,7 +609,7 @@ function assertProductionMenu() {
     if (userVisible.indexOf(label) !== -1) fail("User menu must not contain: " + label);
     else ok("User menu hides: " + label);
   });
-  ["Open 66° Deck Agent", "Refresh brand kit", "Refresh brand assets"].forEach(function (label) {
+  ["Open BrandDeck AI Agent", "Refresh brand kit", "Refresh brand assets"].forEach(function (label) {
     if (userVisible.indexOf(label) === -1) fail("User menu missing: " + label);
     else ok("User menu includes: " + label);
   });

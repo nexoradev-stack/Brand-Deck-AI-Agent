@@ -37,7 +37,7 @@ const SOLUTION_REQ = "Create a 30-slide solution deck for Contoso Health: SQL Se
 const PROPOSAL_REQ = "Create a 30-slide proposal for Best Buy (bestbuy.com): a unified retail data platform on BigQuery, Dataplex and Looker. Success KPIs: 50% faster report builds, a 95% data quality pass rate and 30% lower platform run cost. Include scope, team structure, RACI, risks, support model, pricing options and next steps.";
 
 test("version label is V.1_69 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(69|[7-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(69|[7-9]\d)'/);
 });
 
 test("1. General 29: a design with arcs is never moved to NaN - nothing piles at the top, nothing off the slide", () => {

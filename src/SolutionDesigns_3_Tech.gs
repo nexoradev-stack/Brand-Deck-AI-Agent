@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Solution Deck design library (V.1_53), part 3: architecture and technical detail
+   BrandDeck AI Agent — Solution Deck design library (V.1_53), part 3: architecture and technical detail
    From the 66degrees solution decks (Paradigm, SQL AG customer deck, SQL Server playbook, ADF, Managed Services 2026,
    HCA Control Tower): architecture with numbered groups and notes, architecture of icon nodes with labelled arrows,
    two regions with their zones, a stack of layers, problem / solution with the code, a table with note panels, a

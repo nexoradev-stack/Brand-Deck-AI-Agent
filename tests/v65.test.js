@@ -40,7 +40,7 @@ const texts = (o) => o.els.filter((e) => e.t === "text").map((e) => String(e.tex
 const norm = (slides) => { const plan = { slides: JSON.parse(JSON.stringify(slides)) }; const ctx = { log: [] }; G.normalizeShapes_(plan, ctx); return plan.slides; };
 
 test("version label is V.1_65 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(6[5-9]|[7-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(6[5-9]|[7-9]\d)'/);
 });
 
 test("1+3. a list is one text with real bullets and even spacing, spread over its box", () => {

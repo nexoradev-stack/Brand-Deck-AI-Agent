@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — stock images in the photo strips (V.1_46)
+   BrandDeck AI Agent — stock images in the photo strips (V.1_46)
    Designs with a photo strip, panel or band (right strip, left panel, top band) show a stock image from the brand
    folder in about 95 slides out of 100, and the 66° streak pattern in the rest. The image is chosen for the slide:
    its shape (tall images for strips, wide images for bands), its name / description against the slide's words, and

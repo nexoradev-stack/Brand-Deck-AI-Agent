@@ -1,4 +1,4 @@
-# 66° Deck Agent: the deck checklist (V.1_73)
+# BrandDeck AI Agent: the deck checklist (V.1_73)
 
 One list for every deck type. It is both the review list for people and the list of what the add-on checks by itself.
 **Auto** means the add-on checks it on every slide before the slide is drawn, draws the slide again with a better

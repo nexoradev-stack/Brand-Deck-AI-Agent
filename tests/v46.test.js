@@ -125,5 +125,5 @@ test("pillars: the cards end before the photo strip", () => {
 });
 
 test("version label is V.1_46 or later", () => {
-  assert.ok(/AGENT_VERSION_ = '66° Deck Agent V\.1_(4[6-9]|[5-9][0-9])'/.test(read("src/Code.gs")));
+  assert.ok(/AGENT_VERSION_ = 'BrandDeck AI Agent V\.1_(4[6-9]|[5-9][0-9])'/.test(read("src/Code.gs")));
 });

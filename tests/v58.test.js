@@ -131,7 +131,7 @@ const ALL = () => loadAll(() => ({}));
 const GATE = require("./fixtures/quality-gate.js");
 
 test("version label is V.1_58 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(5[8-9]|[6-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(5[8-9]|[6-9]\d)'/);
 });
 
 test("quality gate: every design at 2-6 items and three text lengths - never texts on top of each other, few cuts, little empty space", () => {

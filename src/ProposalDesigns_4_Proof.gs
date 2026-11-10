@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Proposal Deck design library (V.1_42), part 4: proof and commercials
+   BrandDeck AI Agent — Proposal Deck design library (V.1_42), part 4: proof and commercials
    Credentials, partner badges, logo wall, customer stories, case study, team (photos grid, roles, structure),
    pricing table, package options, investment summary and next steps.
    Every design here draws only in a Proposal Deck (ENGINE.addProposalDesign).

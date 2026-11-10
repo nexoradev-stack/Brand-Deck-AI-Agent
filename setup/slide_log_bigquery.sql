@@ -1,4 +1,4 @@
--- 66° Deck Agent slide log (V.1_64) - one-time BigQuery setup, in the same dataset as the usage log
+-- BrandDeck AI Agent slide log (V.1_64) - one-time BigQuery setup, in the same dataset as the usage log
 -- Run once in the BigQuery console with project your-gcp-project-id selected. Safe to run again.
 
 -- One row per slide drawn: what the slide asked for (spec_json), which design drew it, and what the deck check found
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `your-gcp-project-id.deck_agent.deck_slides` (
 )
 PARTITION BY DATE(ts)
 CLUSTER BY deck_library, design
-OPTIONS (description = '66° Deck Agent slide log, written by the add-on');
+OPTIONS (description = 'BrandDeck AI Agent slide log, written by the add-on');
 
 -- Slides with a problem the check could not correct, newest first (the list to fix)
 CREATE OR REPLACE VIEW `your-gcp-project-id.deck_agent.v_slide_issues` AS

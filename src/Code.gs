@@ -80,7 +80,7 @@ function onInstall() {
 function buildProductionMenu_() {
   SlidesApp.getUi()
     .createAddonMenu()
-    .addItem('Open 66° Deck Agent', 'showGenerator')
+    .addItem('Open BrandDeck AI Agent', 'showGenerator')
     .addSeparator()
     .addItem('Refresh brand kit', 'refreshBrandKit')
     .addItem('Refresh brand assets', 'refreshBrandAssets')
@@ -96,13 +96,13 @@ function showLastResult() {
   let last = null;
   try { last = JSON.parse(PropertiesService.getUserProperties().getProperty('LAST_RESULT_V1') || 'null'); } catch (e) {}
   const ui = SlidesApp.getUi();
-  if (!last || !last.message) { ui.alert('66° Deck Agent', 'No result yet: make a deck first.', ui.ButtonSet.OK); return; }
-  ui.alert('66° Deck Agent — last result (' + String(last.at || '').replace('T', ' ').slice(0, 16) + ' UTC)', last.message, ui.ButtonSet.OK);
+  if (!last || !last.message) { ui.alert('BrandDeck AI Agent', 'No result yet: make a deck first.', ui.ButtonSet.OK); return; }
+  ui.alert('BrandDeck AI Agent — last result (' + String(last.at || '').replace('T', ' ').slice(0, 16) + ' UTC)', last.message, ui.ButtonSet.OK);
 }
 // V.1_56: one tiny request to each model this add-on is set to use, from the menu
 function testAiModels() {
   const ui = SlidesApp.getUi();
-  ui.alert('66° Deck Agent — AI models', typeof testConfiguredModels_ === 'function' ? testConfiguredModels_() : 'Model test not available.', ui.ButtonSet.OK);
+  ui.alert('BrandDeck AI Agent — AI models', typeof testConfiguredModels_ === 'function' ? testConfiguredModels_() : 'Model test not available.', ui.ButtonSet.OK);
 }
 
 function showGenerator() {
@@ -119,11 +119,11 @@ function showGeneratorSidebar() {
 
 function onHomepage() {
   return CardService.newCardBuilder()
-    .setHeader(CardService.newCardHeader().setTitle('66° Deck Agent'))
+    .setHeader(CardService.newCardHeader().setTitle('BrandDeck AI Agent'))
     .addSection(
       CardService.newCardSection().addWidget(
         CardService.newTextParagraph().setText(
-          'Open a Google Slides presentation and launch 66° Deck Agent from the add-on menu. Generated slides are added to this same presentation.'
+          'Open a Google Slides presentation and launch BrandDeck AI Agent from the add-on menu. Generated slides are added to this same presentation.'
         )
       )
     )
@@ -3359,7 +3359,7 @@ function flowchartDeckSpecs_(text, read, fileName) {
     specs.push({
       type: 'diagram', title: clean(ir.title || fallback, 80), lead: ir.lead ? ddLead_(ir.lead, 150) : '', diagram: ir,
       items: (ir.nodes || []).slice(0, 8).map(function (nd) { return { title: nd.label, text: nd.sub || nd.label }; }),
-      notes: 'Diagram (' + ir.type + ') built by the 66° Deck Agent with diagram-design' + (ir.sourceLabel && ir.sourceLabel !== 'description' ? ' from ' + ir.sourceLabel : '') +
+      notes: 'Diagram (' + ir.type + ') built by the BrandDeck AI Agent with diagram-design' + (ir.sourceLabel && ir.sourceLabel !== 'description' ? ' from ' + ir.sourceLabel : '') +
         '. Every box and arrow is an editable shape.'
     });
   });
@@ -5561,7 +5561,7 @@ function runDeckGeneration(data) {
    Each run does as much as fits in ~4.5 minutes, saves where it stopped and returns { continue: true }; the panel then
    calls continueDeckGeneration(runId) for the next part, until the deck is finished.
 ========================= */
-const AGENT_VERSION_ = '66° Deck Agent V.1_80';   // shown in every result message (which version made the deck)
+const AGENT_VERSION_ = 'BrandDeck AI Agent V.1_80';   // shown in every result message (which version made the deck)
 const MAX_SLIDES_ = 200;            // panel and server limit, Create and Rebrand
 const SINGLE_RUN_MAX_ = 20;         // decks up to this size are made in one run (the full single-run pipeline)
 const LONG_BATCH_ = 8;              // slides written, fitted and drawn together in a long deck
@@ -6836,7 +6836,7 @@ function startLongDeck_(ctx, target, p, started) {
   // V.1_51: the deck is built in a hidden working copy and appears in the user's presentation all at once at the end
   // (before, the first part appeared, then nothing for minutes, then the rest)
   if (workDeckFits_(target)) {
-    const wp = newWorkingPresentation_(String(outline.deck_title || 'Proposal').slice(0, 80) + ' (66° Deck Agent working copy)');
+    const wp = newWorkingPresentation_(String(outline.deck_title || 'Proposal').slice(0, 80) + ' (BrandDeck AI Agent working copy)');
     st.workId = wp.getId();
     st.workSkip = wp.getSlides()[0] ? wp.getSlides()[0].getObjectId() : '';
     st.blankIds = p.blankDeck ? target.getSlides().map(function (sl) { return sl.getObjectId(); }) : [];

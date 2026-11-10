@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Proposal Deck design library (V.1_42), part 1: understanding, plans and tables
+   BrandDeck AI Agent — Proposal Deck design library (V.1_42), part 1: understanding, plans and tables
    Key inputs, data table, phase matrix, executive overviews, text with screenshot, checklist and open decisions,
    category legend, impact and mitigation, comparison check matrix, icon table, governance columns, elevator pitch,
    opening statement box and numbered rows.

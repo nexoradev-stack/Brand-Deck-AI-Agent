@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 66° Deck Agent — fails if the repository contains a key, a secret, a real project or script ID,
+# BrandDeck AI Agent — fails if the repository contains a key, a secret, a real project or script ID,
 # or a personal email address. Runs in CI on every push and pull request.
 #   Run locally: bash scripts/check-secrets.sh
 set -uo pipefail

@@ -22,7 +22,7 @@ const GEN = "Create a 40-slide presentation for ZoomInfo (zoominfo.com) on moder
 const ctxFor = (prompt, extra) => { const c = Object.assign({ log: [], userPrompt: prompt, approvedFacts: [], brand: { name: "66degrees" } }, extra || {}); c.brief = G.briefFromText_(prompt, 40); return c; };
 
 test("version label is V.1_73 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(7[3-9]|[8-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(7[3-9]|[8-9]\d)'/);
   assert.ok(JSON.parse(read(".clasp.json")).filePushOrder.includes("Gate.gs"));
 });
 

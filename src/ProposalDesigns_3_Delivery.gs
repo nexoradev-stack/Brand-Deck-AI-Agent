@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Proposal Deck design library (V.1_42), part 3: delivery, phases and diagrams
+   BrandDeck AI Agent — Proposal Deck design library (V.1_42), part 3: delivery, phases and diagrams
    Phase bars and columns, Gantt roadmap, phase detail with photo strip, step flow, cycle, adoption curve,
    architecture flow, message / system flow, hub and spoke, isometric stack with callouts, L0-L2 tiers,
    governance tree, pyramid, puzzle and offering radar.

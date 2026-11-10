@@ -1,4 +1,4 @@
-# 66° Deck Agent usage log: one-time BigQuery setup
+# BrandDeck AI Agent usage log: one-time BigQuery setup
 
 Done once by one of the two admins in the Google Cloud project `your-gcp-project-id`.
 Pushing the code does not create anything in BigQuery.

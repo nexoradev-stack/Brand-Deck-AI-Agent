@@ -314,5 +314,5 @@ test("long deck of 30 for Unilever: 30 slides; risks with mitigations; team lane
 });
 
 test("version label is V.1_48 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_ = '66° Deck Agent V\.1_(4[8-9]|[5-9][0-9])'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_ = 'BrandDeck AI Agent V\.1_(4[8-9]|[5-9][0-9])'/);
 });

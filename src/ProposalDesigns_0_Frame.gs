@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Proposal Deck design library (V.1_42), part 0: frame slides
+   BrandDeck AI Agent — Proposal Deck design library (V.1_42), part 0: frame slides
    Agenda (spiral for up to 7 sections; dark two columns or dark table of contents for longer agendas, continued
    on a second slide when needed), section dividers (dark streaks numbered, navy with its topics) and the light
    workstream divider. Cover and Thank you stay the strict designs in Engine.gs.

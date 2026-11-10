@@ -1,4 +1,4 @@
--- 66° Deck Agent usage log (V.1_62) - one-time BigQuery setup
+-- BrandDeck AI Agent usage log (V.1_62) - one-time BigQuery setup
 -- Project: your-gcp-project-id   Dataset: deck_agent
 -- Run the whole file once in the BigQuery console (project your-gcp-project-id selected).
 -- Safe to run again: tables are only created if missing, views are replaced.
@@ -6,7 +6,7 @@
 
 -- 1. Dataset
 CREATE SCHEMA IF NOT EXISTS `your-gcp-project-id.deck_agent`
-OPTIONS (location = 'US', description = '66° Deck Agent usage log');
+OPTIONS (location = 'US', description = 'BrandDeck AI Agent usage log');
 
 -- 2. Raw log: one row per run part per Gemini model, written by the add-on
 CREATE TABLE IF NOT EXISTS `your-gcp-project-id.deck_agent.deck_usage` (
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `your-gcp-project-id.deck_agent.deck_usage` (
 )
 PARTITION BY DATE(ts)
 CLUSTER BY email, model
-OPTIONS (description = '66° Deck Agent token usage, written by the add-on');
+OPTIONS (description = 'BrandDeck AI Agent token usage, written by the add-on');
 
 -- 3. Prices (USD per 1 million tokens). Fill in once, add a new row with a new effective_from when Google changes a price.
 CREATE TABLE IF NOT EXISTS `your-gcp-project-id.deck_agent.model_rates` (
@@ -175,7 +175,7 @@ CREATE TABLE IF NOT EXISTS `your-gcp-project-id.deck_agent.deck_slides` (
 )
 PARTITION BY DATE(ts)
 CLUSTER BY deck_library, design
-OPTIONS (description = '66° Deck Agent slide log, written by the add-on');
+OPTIONS (description = 'BrandDeck AI Agent slide log, written by the add-on');
 
 -- Slides with a problem the check could not correct, newest first (the list to fix)
 CREATE OR REPLACE VIEW `your-gcp-project-id.deck_agent.v_slide_issues` AS

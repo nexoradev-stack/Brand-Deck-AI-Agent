@@ -129,7 +129,7 @@ const texts = (sl) => sl.els.filter((e) => e.t === "text").map((e) => e.text);
 const ALL = () => loadAll(() => ({}));
 
 test("version label is V.1_57 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(5[7-9]|[6-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(5[7-9]|[6-9]\d)'/);
 });
 
 test("decision 1-A: a Solution Deck under 18 slides has no divider slides; 18 and more keep them", () => {

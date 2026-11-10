@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Solution Deck design library (V.1_52), part 1: cards, columns and text
+   BrandDeck AI Agent — Solution Deck design library (V.1_52), part 1: cards, columns and text
    Built from the slides of the 66degrees Solutions folder (Managed Services 2026, SQL Server playbook, SQL AG customer
    deck, GE Accelerator Services, GE Unlock, HCA Control Tower, Solution Consulting Showcase, Paradigm, MCO, GWS GE H2'26,
    GenMedia66). Header columns (optional photo banner), cards beside a photo strip, three card columns with a footer
