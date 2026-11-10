@@ -1,4 +1,4 @@
-# 🏗️ 66° Deck Agent — Architecture
+# 🏗️ BrandDeck AI Agent — Architecture
 
 How a prompt becomes on-brand, editable slides inside the presentation that is already open, and how every slide is checked on the way.
 

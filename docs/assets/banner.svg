@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="t d">
-  <title id="t">66° Deck Agent — Presentation AI Agent for Google Slides</title>
+  <title id="t">BrandDeck AI Agent — Presentation AI Agent for Google Slides</title>
   <desc id="d">From a prompt to on-brand, editable slides in the deck you already have open. A prompt card flows into a stack of finished slides.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -18,9 +18,8 @@
   <!-- Title -->
   <g font-family="'Plus Jakarta Sans', Lexend, 'Segoe UI', Helvetica, Arial, sans-serif">
     <text x="72" y="114" fill="#B3C5D0" font-size="22" font-weight="500">Presentation AI Agent for Google Slides</text>
-    <text x="70" y="184" fill="#FFFDF9" font-size="66" font-weight="700" textLength="92" lengthAdjust="spacingAndGlyphs">66°</text>
-    <text x="180" y="184" fill="#FFFDF9" font-size="66" font-weight="700" textLength="148" lengthAdjust="spacingAndGlyphs">Deck</text>
-    <text x="344" y="184" fill="#4D8BFF" font-size="66" font-weight="700" textLength="190" lengthAdjust="spacingAndGlyphs">Agent</text>
+    <text x="70" y="184" fill="#FFFDF9" font-size="64" font-weight="700" textLength="318" lengthAdjust="spacingAndGlyphs">BrandDeck</text>
+    <text x="406" y="184" fill="#4D8BFF" font-size="64" font-weight="700" textLength="250" lengthAdjust="spacingAndGlyphs">AI Agent</text>
     <text x="72" y="230" fill="#D9E3EA" font-size="21" font-weight="400">From a prompt to on-brand, editable slides.</text>
 
     <g font-size="15" font-weight="500">
