@@ -1,0 +1,38 @@
+# Checks every push and pull request.
+#   test:    validates the Apps Script project and runs the node:test suites (Node 20 and 22)
+#   secrets: fails if a key, secret, real project/script ID or personal email address is committed
+# Deploying to Apps Script stays in deploy.yml.
+
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+      - run: npm ci
+      - name: Validate and run tests
+        run: npm test
+
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for keys, secrets and personal emails
+        run: bash scripts/check-secrets.sh

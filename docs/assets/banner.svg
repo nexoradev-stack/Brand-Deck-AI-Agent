@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="t d">
+  <title id="t">66° Deck Agent — Presentation AI Agent for Google Slides</title>
+  <desc id="d">From a prompt to on-brand, editable slides in the deck you already have open. A prompt card flows into a stack of finished slides.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#040A1B"/>
+      <stop offset="1" stop-color="#0B1A44"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.76" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#0052FF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#0052FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="28" fill="url(#glow)"/>
+
+  <!-- Title -->
+  <g font-family="'Plus Jakarta Sans', Lexend, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="72" y="114" fill="#B3C5D0" font-size="22" font-weight="500">Presentation AI Agent for Google Slides</text>
+    <text x="70" y="184" fill="#FFFDF9" font-size="66" font-weight="700" textLength="92" lengthAdjust="spacingAndGlyphs">66°</text>
+    <text x="180" y="184" fill="#FFFDF9" font-size="66" font-weight="700" textLength="148" lengthAdjust="spacingAndGlyphs">Deck</text>
+    <text x="344" y="184" fill="#4D8BFF" font-size="66" font-weight="700" textLength="190" lengthAdjust="spacingAndGlyphs">Agent</text>
+    <text x="72" y="230" fill="#D9E3EA" font-size="21" font-weight="400">From a prompt to on-brand, editable slides.</text>
+
+    <g font-size="15" font-weight="500">
+      <rect x="72" y="260" width="84" height="32" rx="16" fill="#0052FF" fill-opacity="0.22" stroke="#4D8BFF" stroke-opacity="0.8"/>
+      <text x="114" y="281" fill="#DCE7FF" text-anchor="middle">Create</text>
+      <rect x="166" y="260" width="100" height="32" rx="16" fill="#0052FF" fill-opacity="0.22" stroke="#4D8BFF" stroke-opacity="0.8"/>
+      <text x="216" y="281" fill="#DCE7FF" text-anchor="middle">Proposal</text>
+      <rect x="276" y="260" width="96" height="32" rx="16" fill="#0052FF" fill-opacity="0.22" stroke="#4D8BFF" stroke-opacity="0.8"/>
+      <text x="324" y="281" fill="#DCE7FF" text-anchor="middle">Solution</text>
+      <rect x="382" y="260" width="106" height="32" rx="16" fill="#B3C5D0" fill-opacity="0.14" stroke="#B3C5D0" stroke-opacity="0.7"/>
+      <text x="435" y="281" fill="#E6EEF3" text-anchor="middle">Flowchart</text>
+      <rect x="498" y="260" width="96" height="32" rx="16" fill="#B3C5D0" fill-opacity="0.14" stroke="#B3C5D0" stroke-opacity="0.7"/>
+      <text x="546" y="281" fill="#E6EEF3" text-anchor="middle">Rebrand</text>
+    </g>
+  </g>
+
+  <!-- Prompt card -->
+  <g transform="translate(704 120)">
+    <rect width="150" height="96" rx="12" fill="#0E1C45" stroke="#4D8BFF" stroke-width="2"/>
+    <circle cx="20" cy="22" r="7" fill="#4D8BFF"/>
+    <rect x="34" y="17" width="90" height="10" rx="5" fill="#B3C5D0" opacity="0.8"/>
+    <rect x="16" y="44" width="118" height="8" rx="4" fill="#B3C5D0" opacity="0.45"/>
+    <rect x="16" y="60" width="96" height="8" rx="4" fill="#B3C5D0" opacity="0.45"/>
+    <rect x="16" y="76" width="70" height="8" rx="4" fill="#B3C5D0" opacity="0.45"/>
+  </g>
+  <!-- Spark -->
+  <path d="M866 168 H 900" stroke="#4D8BFF" stroke-width="2.5" stroke-dasharray="5 6"/>
+  <path d="M918 152 l5 12 l12 5 l-12 5 l-5 12 l-5 -12 l-12 -5 l12 -5 z" fill="#4D8BFF"/>
+  <path d="M936 168 H 966" stroke="#4D8BFF" stroke-width="2.5" stroke-dasharray="5 6"/>
+
+  <!-- Slide stack -->
+  <g transform="translate(990 92) rotate(-4)">
+    <rect width="220" height="124" rx="8" fill="#FFFDF9" opacity="0.35"/>
+  </g>
+  <g transform="translate(982 104) rotate(-2)">
+    <rect width="220" height="124" rx="8" fill="#FFFDF9" opacity="0.6"/>
+  </g>
+  <g transform="translate(974 116)">
+    <rect width="220" height="124" rx="8" fill="#FFFDF9"/>
+    <rect x="14" y="14" width="120" height="11" rx="3" fill="#040A1B"/>
+    <rect x="14" y="31" width="80" height="7" rx="3" fill="#B3C5D0"/>
+    <!-- KPI tiles -->
+    <rect x="14" y="50" width="58" height="44" rx="3" fill="#F3F2F0"/>
+    <rect x="22" y="58" width="30" height="12" rx="2" fill="#0052FF"/>
+    <rect x="22" y="76" width="40" height="6" rx="2" fill="#B3C5D0"/>
+    <rect x="80" y="50" width="58" height="44" rx="3" fill="#F3F2F0"/>
+    <rect x="88" y="58" width="30" height="12" rx="2" fill="#0052FF"/>
+    <rect x="88" y="76" width="40" height="6" rx="2" fill="#B3C5D0"/>
+    <!-- mini flow -->
+    <rect x="148" y="52" width="58" height="16" rx="3" fill="#0052FF"/>
+    <path d="M177 68 v8" stroke="#040A1B" stroke-width="1.6"/>
+    <rect x="148" y="76" width="58" height="16" rx="3" fill="#040A1B"/>
+    <text x="206" y="116" fill="#040A1B" font-family="'Plus Jakarta Sans', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="end">66°</text>
+  </g>
+  <text x="1084" y="276" fill="#B3C5D0" font-family="'Plus Jakarta Sans', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="middle">editable · on-brand · same deck</text>
+</svg>
