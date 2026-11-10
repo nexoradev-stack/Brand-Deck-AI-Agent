@@ -46,7 +46,7 @@ let R = null;
 const run = () => R || (R = rebrand(REVIEW));
 
 test("version label is V.1_59 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(59|[6-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(59|[6-9]\d)'/);
 });
 
 test("nothing inside a group is moved with slide positions; a card's label is never taken for the subtitle", () => {

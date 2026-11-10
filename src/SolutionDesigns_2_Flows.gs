@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Solution Deck design library (V.1_52), part 2: agenda, flows, plans, tables and figures
+   BrandDeck AI Agent — Solution Deck design library (V.1_52), part 2: agenda, flows, plans, tables and figures
    Numbered agenda rows, why / what / how arrow columns, three steps with a feedback loop, step columns, labelled rows,
    phases with timing and funding bars, value over time with three milestones, three numbered rows under a photo band,
    a comparison matrix with status colours, a plain table, a scorecard, value tiers, a pillar with two figures.

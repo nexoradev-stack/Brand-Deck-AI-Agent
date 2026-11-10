@@ -36,7 +36,7 @@ function sandbox(opts) {
         return { getResponseCode: () => 200, getContentText: () => "{}" };
       }
     },
-    AGENT_VERSION_: "66° Deck Agent V.1_62"
+    AGENT_VERSION_: "BrandDeck AI Agent V.1_62"
   };
   vm.createContext(sb);
   vm.runInContext(read("src/UsageLog.gs"), sb, { filename: "UsageLog.gs" });
@@ -45,7 +45,7 @@ function sandbox(opts) {
 const bqRows = (sb) => sb.fetches.filter((f) => /insertAll$/.test(f.url)).map((f) => JSON.parse(f.o.payload).rows);
 
 test("version label is V.1_62 or later; UsageLog.gs is pushed", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(6[2-9]|[7-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(6[2-9]|[7-9]\d)'/);
   assert.ok(JSON.parse(read(".clasp.json")).filePushOrder.includes("UsageLog.gs"));
 });
 

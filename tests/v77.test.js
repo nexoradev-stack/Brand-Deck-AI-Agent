@@ -18,7 +18,7 @@ const GEN = "Create a 40-slide presentation for Home Depot (homedepot.com) on us
 const ctxFor = (p) => { const c = { log: [], userPrompt: p, approvedFacts: [], brand: { name: "66degrees" } }; c.brief = G.briefFromText_(p, 40); return c; };
 
 test("version label is V.1_77 or later; the deck 48 log is V.1_76 with 40 slides per deck", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(7[7-9]|[8-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(7[7-9]|[8-9]\d)'/);
   assert.equal(LOG.length, 120);
   ["General", "Proposal Deck", "Solution Deck"].forEach((c) => assert.equal(LOG.filter((r) => r.deck_category === c).length, 40, c));
 });

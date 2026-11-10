@@ -1,5 +1,5 @@
 /**
- * 66° Deck Agent — Solution Deck kit (V.1_52, V.1_53)
+ * BrandDeck AI Agent — Solution Deck kit (V.1_52, V.1_53)
  *
  * A Solution Deck explains what 66degrees built or offers and proves that it works. It is built ONLY from Solution
  * designs (SolutionDesigns_*.gs) — never from the Proposal Deck's designs, and the Proposal Deck never uses them; the

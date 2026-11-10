@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — Proposal Deck design library (V.1_42), part 2: cards, panels and grids
+   BrandDeck AI Agent — Proposal Deck design library (V.1_42), part 2: cards, panels and grids
    Icon columns, question columns with a photo strip, two panels, two cards with an arrow, card grids, 2 x 2 cards
    with a callout, deliverable rows, pros and cons, KPI tiles with categories, personas, diagonal options, app tile
    grid, pillars with name chips, paradigm cards (dark) and paradigm columns (light), text with an illustration.

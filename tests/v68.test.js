@@ -29,7 +29,7 @@ const texts = (o) => o.els.filter((e) => e.t === "text").map((e) => String(e.tex
 const LOGS = ["deck38-slide-log.json", "deck39-slide-log.json"].map((f) => JSON.parse(read("tests/fixtures/" + f))).flat();
 
 test("version label is V.1_68 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(6[8-9]|[7-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(6[8-9]|[7-9]\d)'/);
 });
 
 test("1. the checker finds a text half outside its box, a note across a card, a shape off the slide, record text, dot headings, a repeated title", () => {

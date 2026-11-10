@@ -48,7 +48,7 @@ const style = (e) => e.shape.text.textElements.find((t) => t.textRun && t.textRu
 const color = (R, e) => R.sb.colorHex_(style(e).foregroundColor && style(e).foregroundColor.opaqueColor);
 
 test("version label is V.1_61 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(6[1-9]|[7-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(6[1-9]|[7-9]\d)'/);
 });
 
 test("slide 3: every bullet of the five role cards has the same size (kinds are found across the slide, not per card)", () => {

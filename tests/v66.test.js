@@ -33,7 +33,7 @@ const texts = (o) => o.els.filter((e) => e.t === "text").map((e) => String(e.tex
 const ZOOMINFO = "2026-10-28T11:2";
 
 test("version label is V.1_66 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(6[6-9]|[7-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(6[6-9]|[7-9]\d)'/);
 });
 
 test("1. a part of a long deck is matched to its outline by content: no title over another slide's content (General 15-16)", () => {

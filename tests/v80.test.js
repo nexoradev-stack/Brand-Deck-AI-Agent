@@ -21,7 +21,7 @@ const UNITED = "Create a 40-slide presentation for United Airlines (united.com) 
 const CLEVELAND = "Create a 40-slide proposal deck for Cleveland Clinic (clevelandclinic.org) for a Gemini assistant that drafts discharge summaries. Targets: 90 minutes saved per clinician per week, under 2% factual error rate and HIPAA-aligned controls. Include approach, scope, phases, team, RACI, KPIs, risks, support, pricing options, why 66degrees and next steps.";
 
 test("version label is V.1_80 or later; every slide gets the last word as it is drawn", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(8\d|9\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(8\d|9\d)'/);
   assert.match(read("src/Code.gs"), /if \(typeof lastWord_ === 'function'\) specs\.forEach\(function \(sp\) \{ try \{ lastWord_\(sp, ctx\);/);
   assert.match(read("src/UsageLog.gs"), /concat\(\(spec && spec\.preFixed\) \|\| \[\]\)/, "its fixes go to the slide log");
 });

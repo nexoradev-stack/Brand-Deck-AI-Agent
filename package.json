@@ -2,7 +2,7 @@
   "name": "66-deck-agent",
   "version": "1.0.0",
   "private": true,
-  "description": "66degrees Deck Agent — Google Apps Script presentation generation system",
+  "description": "BrandDeck AI Agent (66degrees) — Google Apps Script presentation generation system",
   "scripts": {
     "test": "node scripts/validate.js && node --test tests/*.test.js",
     "validate": "node scripts/validate.js",

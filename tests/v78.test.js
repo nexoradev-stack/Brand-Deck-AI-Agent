@@ -20,7 +20,7 @@ const ctxFor = (p) => { const c = { log: [], userPrompt: p, approvedFacts: [], b
 // ---------------- release
 
 test("version label is V.1_78 or later; Quality.gs is pushed after Finish.gs and runs after the finish check", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(7[8-9]|[8-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(7[8-9]|[8-9]\d)'/);
   const order = JSON.parse(read(".clasp.json")).filePushOrder;
   assert.ok(order.indexOf("Quality.gs") > order.indexOf("Finish.gs"));
   assert.match(read("src/Code.gs"), /deckFinishCheck_\(plan\.slides, ctx\);[^\n]*\n\s*deckQuality_\(plan\.slides, ctx, started\);/);

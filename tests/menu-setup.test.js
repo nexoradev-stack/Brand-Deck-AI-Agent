@@ -47,7 +47,7 @@ function loadSetup() {
 test("user menu omits admin/reference items and keeps production actions", () => {
   const code = read("src/Code.gs");
   const menu = code.slice(code.indexOf("function buildProductionMenu_()"), code.indexOf("function showGenerator()"));
-  assert.match(menu, /Open 66° Deck Agent/);
+  assert.match(menu, /Open BrandDeck AI Agent/);
   assert.match(menu, /Refresh brand kit/);
   assert.match(menu, /Refresh brand assets/);
   assert.doesNotMatch(menu, /Reference library status/);
@@ -86,7 +86,7 @@ test("onInstall and showGenerator trigger initial setup", () => {
   assert.match(install, /ensureInitialSetup_/);
   const show = code.slice(code.indexOf("function showGenerator()"), code.indexOf("function showGeneratorSidebar"));
   assert.match(show, /ensureInitialSetup_/);
-  assert.doesNotMatch(show, /\.setTitle\(\s*['"]66° Deck Agent['"]\s*\)/);
+  assert.doesNotMatch(show, /\.setTitle\(\s*['"]BrandDeck AI Agent['"]\s*\)/);
   const granted = code.slice(code.indexOf("function onFileScopeGranted"), code.indexOf("var INITIAL_SETUP_PROP"));
   assert.match(granted, /ensureInitialSetup_/);
   const manifest = JSON.parse(read("src/appsscript.json"));

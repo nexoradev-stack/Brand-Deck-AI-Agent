@@ -1,8 +1,15 @@
 # 📜 Changelog
 
-All notable changes to the BrandDeck AI Agent (shown in Google Slides as 66° Deck Agent). Versions follow the project's own numbering (`V.1_xx`); each release below groups the versions of one stage.
+All notable changes to the BrandDeck AI Agent. Versions follow the project's own numbering (`V.1_xx`); each release below groups the versions of one stage.
 
 ---
+
+## v1.80.3 — Add-on renamed in Google Slides · 10 Nov 2026
+
+- 🏷️ The add-on now shows as **BrandDeck AI Agent** everywhere in Google Slides: Extensions menu (**Open BrandDeck AI Agent**), sidebar heading, alerts, add-on card and the version in every result message (`BrandDeck AI Agent V.1_80`)
+- 🗂️ Drive folder names are unchanged (`66° Deck Agent Assets`, `66° Deck Agent – client logos`) so saved brand assets and client logos keep working
+- ✅ Tests and `scripts/validate.js` updated for the new name
+- 🙌 Credits: nexoradev-stack · Claude · Cursor
 
 ## v1.80.2 — New name: BrandDeck AI Agent · 10 Nov 2026
 
@@ -82,4 +89,4 @@ All notable changes to the BrandDeck AI Agent (shown in Google Slides as 66° De
 
 ---
 
-🙌 nexoradev-stack · eneelkant · Claude · Cursor
+🙌 nexoradev-stack · Claude · Cursor

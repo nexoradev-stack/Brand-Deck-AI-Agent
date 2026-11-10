@@ -1,5 +1,5 @@
 /* =========================================================================================================
-   66° Deck Agent — photo strips (V.1_45)
+   BrandDeck AI Agent — photo strips (V.1_45)
    The dark streak photo cut to the strip, panel or band a design shows (right strip, left panel, top / bottom band),
    so the picture placed on the slide is exactly the size of what is visible: clicking it selects just that strip, and
    it can be replaced, recoloured, cropped or deleted like any picture. Cut from the 66degrees section photo; a strip

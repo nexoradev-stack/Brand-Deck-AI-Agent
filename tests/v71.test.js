@@ -30,7 +30,7 @@ const GEN = "Create a 30-slide presentation for ZoomInfo (zoominfo.com) on moder
 const ctxFor = (prompt) => { const c = { log: [], userPrompt: prompt, approvedFacts: [], brand: { name: "66degrees" } }; c.brief = G.briefFromText_(prompt, 30); return c; };
 
 test("version label is V.1_71 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(7[1-9]|[8-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(7[1-9]|[8-9]\d)'/);
 });
 
 test("A1. a topic shown once is recognised whatever its title (the repeats of deck 42)", () => {

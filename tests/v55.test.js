@@ -69,7 +69,7 @@ const render1 = (sb, spec) => sb.ENGINE.render({ slides: [Object.assign({ deckLi
 const texts = (o) => o.els.filter((e) => e.t === "text").map((e) => e.text);
 
 test("version label is V.1_55 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(5[5-9]|[6-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(5[5-9]|[6-9]\d)'/);
 });
 
 test("a layer stack whose text does not fit returns no layout instead of crashing (deck 26 slide 23)", () => {

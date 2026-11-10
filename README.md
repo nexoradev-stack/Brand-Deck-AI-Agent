@@ -20,7 +20,7 @@
 
 ## ✨ What it does
 
-**BrandDeck AI Agent** (shown in Google Slides as **66° Deck Agent**) is a **Google Slides add-on** that turns a prompt (and optional source files) into **on-brand, editable** 66degrees slides, drawn as native Slides shapes **into the presentation that is already open**.
+**BrandDeck AI Agent** is a **Google Slides add-on** that turns a prompt (and optional source files) into **on-brand, editable** 66degrees slides, drawn as native Slides shapes **into the presentation that is already open**.
 
 | | |
 |---|---|
@@ -178,7 +178,7 @@ Brand-Deck-AI-Agent/
 5. **Usage log (optional):** run `setup/usage_bigquery.sql` and follow `setup/USAGE_SETUP.md`.
 6. **First authorisation** runs `ensureInitialSetup_()`, which loads the reference library and brand assets.
 
-The Extensions menu shows: **Open 66° Deck Agent** · **Refresh brand kit** · **Refresh brand assets** · **Test AI models**.
+The Extensions menu shows: **Open BrandDeck AI Agent** · **Refresh brand kit** · **Refresh brand assets** · **Test AI models**.
 
 ### 🚢 Deploy
 
@@ -208,7 +208,6 @@ Push to `main` (or run `gh workflow run deploy.yml --ref main`). The workflow va
 | Contributor | Role |
 |---|---|
 | 👤 **[nexoradev-stack](https://github.com/nexoradev-stack)** | Owner, product, design and testing |
-| 👤 **[eneelkant](https://github.com/eneelkant)** | Co-builder (original repository: [eneelkant/66-deck-agent](https://github.com/eneelkant/66-deck-agent)) |
 | 🤖 **Claude** (Anthropic) | Code, design and docs |
 | 🖱️ **Cursor** | AI code editor and agent (co-author on 69 commits) |
 

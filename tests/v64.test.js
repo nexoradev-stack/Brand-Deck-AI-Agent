@@ -15,7 +15,7 @@ const { loadAddon, replay, ROOT } = require("./fixtures/load-addon.js");
 const read = (rel) => fs.readFileSync(path.join(ROOT, rel), "utf8");
 
 test("version label is V.1_64 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(6[4-9]|[7-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(6[4-9]|[7-9]\d)'/);
 });
 
 test("every reported slide comes out clean with the current code", () => {
@@ -76,7 +76,7 @@ test("the slide log: every drawn slide with its content, design and check; writt
     ScriptApp: { getOAuthToken: () => "T" }, Session: { getEffectiveUser: () => ({ getEmail: () => "a.b@example.com" }) },
     SlidesApp: { getActivePresentation: () => ({ getName: () => "Deck", getUrl: () => "u" }) },
     UrlFetchApp: { fetch(url, o) { fetches.push({ url, o }); return { getResponseCode: () => 200, getContentText: () => "{}" }; } },
-    AGENT_VERSION_: "66° Deck Agent V.1_64" };
+    AGENT_VERSION_: "BrandDeck AI Agent V.1_64" };
   vm.createContext(sb);
   vm.runInContext(read("src/UsageLog.gs"), sb);
   sb.usageRun_({ runId: "r1", mode: "Create", category: "Proposal Deck" }, () => {

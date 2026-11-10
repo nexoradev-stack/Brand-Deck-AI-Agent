@@ -31,7 +31,7 @@ function writer(answers) {
 const RESEARCH = { research: [{ n: 1, title: "Kroger results", snippet: "Kroger reported total sales of $147.6 billion for fiscal 2025 across more than 2,700 supermarkets in 35 states." }], text: "", pdfs: [], images: [] };
 
 test("version label is V.1_79 or later; SlideWriter.gs is pushed after Quality.gs", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(79|[8-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(79|[8-9]\d)'/);
   const order = JSON.parse(read(".clasp.json")).filePushOrder;
   assert.ok(order.indexOf("SlideWriter.gs") > order.indexOf("Quality.gs"));
   assert.doesNotMatch(read("src/SlideWriter.gs"), /AIza[0-9A-Za-z_-]{20,}/);

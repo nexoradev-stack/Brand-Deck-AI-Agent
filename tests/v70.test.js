@@ -34,7 +34,7 @@ const ctxFor = (prompt, extra) => {
 };
 
 test("version label is V.1_70 or later", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(7\d|[8-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(7\d|[8-9]\d)'/);
   assert.ok(JSON.parse(read(".clasp.json")).filePushOrder.includes("Brief.gs"));
 });
 

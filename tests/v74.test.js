@@ -22,7 +22,7 @@ const SOL = "Create a 40-slide solution deck for Contoso Health: SQL Server high
 const ctxFor = (prompt, extra) => { const c = Object.assign({ log: [], userPrompt: prompt, approvedFacts: [], brand: { name: "66degrees" } }, extra || {}); c.brief = G.briefFromText_(prompt, 40); return c; };
 
 test("version label is V.1_74 or later; Finish.gs is pushed after Gate.gs", () => {
-  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'66° Deck Agent V\.1_(7[4-9]|[8-9]\d)'/);
+  assert.match(read("src/Code.gs"), /AGENT_VERSION_\s*=\s*'BrandDeck AI Agent V\.1_(7[4-9]|[8-9]\d)'/);
   const order = JSON.parse(read(".clasp.json")).filePushOrder;
   assert.ok(order.indexOf("Finish.gs") > order.indexOf("Gate.gs"));
   assert.match(read("src/Code.gs"), /deckFinishCheck_\(plan\.slides, ctx\);[^\n]*\n(\s*deckQuality_\([^\n]*\n)?\s*finalizeNotes_\(plan, sources, ctx\);/);

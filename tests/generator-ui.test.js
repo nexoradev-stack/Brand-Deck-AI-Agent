@@ -60,14 +60,14 @@ function htmlOptions(html, id) {
   return Array.from(block[0].matchAll(/<option value="([^"]+)"/g)).map((m) => m[1]);
 }
 
-test("outer sidebar chrome is not titled 66° Deck Agent; inner heading remains", () => {
+test("outer sidebar chrome is not titled BrandDeck AI Agent; inner heading remains", () => {
   const code = read("src/Code.gs");
   const html = read("src/Generator.html");
   const show = code.slice(code.indexOf("function showGenerator()"), code.indexOf("function showGeneratorSidebar"));
-  assert.doesNotMatch(show, /\.setTitle\(\s*['"]66° Deck Agent['"]\s*\)/);
+  assert.doesNotMatch(show, /\.setTitle\(\s*['"]BrandDeck AI Agent['"]\s*\)/);
   assert.match(show, /createHtmlOutputFromFile\('Generator'\)/);
   assert.match(show, /showSidebar/);
-  assert.match(html, /<h1>\s*Deck Agent\s*<\/h1>/);
+  assert.match(html, /<h1>\s*BrandDeck AI Agent\s*<\/h1>/);
   assert.match(html, /class="logo"[^>]*>66<span class="deg">/);
 });
 

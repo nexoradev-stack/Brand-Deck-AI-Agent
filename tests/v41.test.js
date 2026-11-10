@@ -2,7 +2,7 @@
 
 // V.1_41: the Create tab with fewer words. Deck type first; Client name and Website only for a Proposal Deck (hidden and
 // not sent otherwise); "Content source" with the link box and the upload box, no "(optional)" and no help lines;
-// "Topic"; plain "Slides"; the header shows only "Deck Agent".
+// "Topic"; plain "Slides"; the header shows only the agent name.
 const fs = require("fs");
 const path = require("path");
 const test = require("node:test");
